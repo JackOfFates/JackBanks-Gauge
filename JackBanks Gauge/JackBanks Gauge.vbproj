@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Capture.PNG" />
     <None Remove="tacho-meter.svg" />
   </ItemGroup>
 
