@@ -1,6 +1,6 @@
 # JackBanks Gauge
 
-![Gauge Preview](docs/screenshot.png)
+<img src="docs/screenshot.png" alt="Gauge Preview" style="max-width:100%; height:auto;" />
 
 A small WPF gauge control and sample application that renders an animated tachometer-style RPM gauge.
 
