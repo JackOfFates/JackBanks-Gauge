@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) - Background and grid lines removed -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg4273"
+    sodipodi:docname="tacho-meter"
+    viewBox="0 0 517 431"
+    version="1.1"
+    inkscape:version="0.48.0 r9654"
+  >
+  <title id="title5389">Tacho meter</title>
+  <defs id="defs4275">
+  </defs>
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="-4"
+      pagecolor="#ffffff"
+      inkscape:window-height="712"
+      inkscape:window-maximized="1"
+      inkscape:zoom="0.35"
+      inkscape:window-x="-4"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="375"
+      inkscape:cy="62.857143"
+      inkscape:window-width="1280"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(0 -621.36)"
+    >
+    <!-- Red needle -->
+	  <!--<path id="path4145" d="m293.45 819.42-8.0812-8.081c-207.28 209.69-194.42 191.06 8.0812 8.081z" sodipodi:nodetypes="ccc" style="stroke-width:0;fill:#ff0000" inkscape:connector-curvature="0"/>
+    <path id="path4014" sodipodi:nodetypes="ccc" style="stroke-width:0;fill:#ff0000" inkscape:connector-curvature="0" d="m293.45 819.42-8.0812-8.081c-207.28 209.69-194.42 191.06 8.0812 8.081z"/>
+    
+    
+    <circle cx="255" cy="846.21" r="9" style="stroke:#b22222;stroke-width:2;fill:#000000"/> -->
+
+	  <!-- Tick marks -->
+    <path id="path4049" sodipodi:nodetypes="cc" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0" d="m103.54 938.86-32.325 15.917"/>
+    <path id="path4051" sodipodi:nodetypes="cc" d="m84.048 873.84-33.039 0.122" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4053" sodipodi:nodetypes="cc" d="m93.435 808.48-28.284-9.26" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4073" d="m85.283 906.29-18.112 4.0406" style="stroke:#8be58e;stroke-width:1.8055px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4075" d="m81.354 837.96h-18.183" style="stroke:#8be58e;stroke-width:1.6036px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4077" d="m101.58 777.65-14.267-8.7982" style="stroke:#8be58e;stroke-width:1.8748px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    
+    <path id="path4065" d="m395.4 758.46 30.305-18.183" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4067" d="m432.13 807.3 29.976-6.0608" style="stroke:#8be58e;stroke-width:1.9891px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4069" d="m439.99 877.42h28.858" style="stroke:#8be58e;stroke-width:1.8897px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4089" d="m422.89 781.01 13.525-7.7888" style="stroke:#8be58e;stroke-width:2.5401px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4091" d="m442.64 841.64h19.625" style="stroke:#8be58e;stroke-width:1.7994px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    
+    <path id="path4059" d="m231.06 694.53-2.0203-36.365" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4061" sodipodi:nodetypes="cc" d="m291.77 698.69 8.3263-35.774" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4063" d="m353.98 715.74 17.375-24.741" style="stroke:#8be58e;stroke-width:2.339px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4083" d="m263.04 688.04 2.2317-16.134" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4085" d="m324.79 698.38 8.0995-14.579" style="stroke:#8be58e;stroke-width:1.6036px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    
+    <path id="path4087" d="m380.35 730.27 14.203-12.427" style="stroke:#8be58e;stroke-width:1.5719px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    
+    <path id="path4055" sodipodi:nodetypes="cc" d="m120.54 753.34-23.06-18.775" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4057" d="m175.08 716.38-16.999-30.305" sodipodi:nodetypes="cc" style="stroke:#8be58e;stroke-width:2px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4079" d="m143.09 726.14-9.8262-12.033" style="stroke:#8be58e;stroke-width:1.5378px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+    <path id="path4081" d="m195.67 700.4-6.4796-14.579" sodipodi:nodetypes="cc" style="stroke:#8be58e;stroke-width:1.6036px;fill:#2d2d2d" inkscape:connector-curvature="0"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Tacho meter</dc:title>
+        <dc:date>2011-02-17T08:33:51</dc:date>
+        <dc:description>an instrument that measures the rotation speed of a shaft or disk, as in a motor or other machine.</dc:description>
+        <dc:source>https://openclipart.org/detail/120373/tacho-meter-by-netalloy</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>netalloy</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

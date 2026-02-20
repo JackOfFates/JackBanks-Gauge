@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JackBanks_Gauge"
+        xmlns:ShaderEffects="clr-namespace:LiteWare.Wpf.ShaderEffects;assembly=LiteWare.Wpf.ShaderEffects" x:Class="MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="ToolWindow" Background="#FF212121">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <local:GaugeControl ClipToBounds="False" x:Name="gauge" Minimum="0" Maximum="8000" Title="RPM" Units="x1000" Width="576" Height="450" Redline="80" Color="#FF00F95F" RedLineColor="Red" />
+
+        <StackPanel Grid.Column="1" Margin="12" VerticalAlignment="Center">
+            <TextBlock FontWeight="Bold" Foreground="#FFC3C3C3" Text="RPM" />
+            <Slider x:Name="ValueSlider" Minimum="0" Maximum="7000" Width="200" ValueChanged="ValueSlider_ValueChanged" />
+            <TextBlock FontWeight="Bold" Foreground="#FFC3C3C3" Text="Redline" />
+            <Slider x:Name="RedlineSlider" Minimum="0" Maximum="100" Width="200" ValueChanged="RedlineSlider_ValueChanged" Value="70"  />
+            <TextBlock FontWeight="Bold" Foreground="#FFC3C3C3" Text="Needle Hue (0-360)" />
+            <Slider x:Name="ColorHueSlider" Minimum="0" Maximum="360" Width="200" ValueChanged="ColorHueSlider_ValueChanged" Value="150" />
+            <TextBlock FontWeight="Bold" Foreground="#FFC3C3C3" Text="Redline Hue (0-360)" />
+            <Slider x:Name="RedlineHueSlider" Minimum="0" Maximum="360" Width="200" ValueChanged="RedlineHueSlider_ValueChanged" Value="0" />
+            <TextBlock FontWeight="Bold" Foreground="#FFC3C3C3" Text="Maximum RPM" />
+            <Slider x:Name="MaxRpmSlider" Minimum="1000" Maximum="9900" Width="200" ValueChanged="MaxRpmSlider_ValueChanged" Value="7000" />
+        </StackPanel>
+    </Grid>
+</Window>
