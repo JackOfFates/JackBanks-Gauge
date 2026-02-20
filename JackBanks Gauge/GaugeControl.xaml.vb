@@ -136,6 +136,11 @@ Partial Public Class GaugeControl
                 Catch
                 End Try
             End If
+            ' Update RGB chromatic aberration effect amount based on blur
+            Try
+                UpdateRgbEffectAmount()
+            Catch
+            End Try
         Catch : End Try
     End Sub
 
@@ -301,6 +306,27 @@ Partial Public Class GaugeControl
         ' Ticks are now static XAML elements, no dynamic rendering needed
     End Sub
 
+    Private Sub UpdateRgbEffectAmount()
+        Try
+            ' Find the RGBeffect on the root Grid if present and update its Amount property
+            Dim root = TryCast(Me.LayoutRoot, FrameworkElement)
+            If root Is Nothing Then Return
+
+            ' Amount should be in range 0..0.1 mapped from blur magnitude (e.g., 0..50 -> 0..0.1)
+            Dim target = Math.Min(0.1, Math.Max(0.0, Math.Abs(_blurMagnitude) / 50.0 * 0.1))
+
+            Dim effectField = root.Effect
+            If effectField IsNot Nothing Then
+                Dim effType = effectField.GetType()
+                Dim prop = effType.GetProperty("Amount")
+                If prop IsNot Nothing Then
+                    prop.SetValue(effectField, target)
+                End If
+            End If
+        Catch
+        End Try
+    End Sub
+
     Private Sub UpdateNeedle()
         ' Direct mapping: needle angle is based on the actual Value between Minimum and Maximum
         Dim valForNeedle = Value
@@ -351,6 +377,11 @@ Partial Public Class GaugeControl
             Catch
             End Try
         End If
+        ' Update RGB chromatic aberration effect amount based on blur
+        Try
+            UpdateRgbEffectAmount()
+        Catch
+        End Try
     End Sub
 
 End Class
