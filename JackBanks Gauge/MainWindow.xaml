@@ -13,27 +13,43 @@
     WindowStyle="ToolWindow"
     mc:Ignorable="d">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="128*"/>
+            <RowDefinition Height="89*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition />
+            <ColumnDefinition/>
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
         <local:GaugeControl
             x:Name="gauge"
             Title="RPM"
-            Width="576"
             ClipToBounds="False"
             Maximum="8000"
             Minimum="0"
             RedLineColor="Red"
             Redline="80"
             Units="x1000"
-            Color="#FF00F95F" />
+            Color="#FF00F95F" Margin="10,10,10,10" />
+
+        <local:HalfGaugeControl
+            x:Name="halfGauge"
+            Grid.Column="1"
+            Title="RPM"
+            ClipToBounds="False"
+            Maximum="8000"
+            Minimum="0"
+            RedLineColor="Red"
+            Redline="80"
+            Units="x1000"
+            Color="#FF00F95F" Margin="10,10,10,10" />
 
         <StackPanel
-            Grid.Column="1"
-            Margin="12"
-            VerticalAlignment="Center">
+            Grid.Column="2"
+            Margin="12,12,12,0"
+            VerticalAlignment="Top" Grid.RowSpan="2">
             <TextBlock
                 FontWeight="Bold"
                 Foreground="#FFC3C3C3"
@@ -88,6 +104,50 @@
                 Minimum="1000"
                 ValueChanged="MaxRpmSlider_ValueChanged"
                 Value="7000" />
+            <TextBlock
+                FontWeight="Bold"
+                Foreground="#FFC3C3C3"
+                Text="Minimum RPM" />
+            <Slider
+                x:Name="MinRpmSlider"
+                Width="200"
+                Maximum="5000"
+                Minimum="0"
+                ValueChanged="MinRpmSlider_ValueChanged"
+                Value="0" />
+            <CheckBox
+                x:Name="TrailEnabledCheckBox"
+                Margin="0,6,0,0"
+                Content="Trail Enabled"
+                FontWeight="Bold"
+                Foreground="#FFC3C3C3"
+                IsChecked="True"
+                Checked="TrailEnabledCheckBox_Changed"
+                Unchecked="TrailEnabledCheckBox_Changed" />
+            <TextBlock
+                FontWeight="Bold"
+                Foreground="#FFC3C3C3"
+                Text="Trail Segments" />
+            <Slider
+                x:Name="TrailSegmentsSlider"
+                Width="200"
+                Maximum="256"
+                Minimum="1"
+                IsSnapToTickEnabled="True"
+                TickFrequency="1"
+                ValueChanged="TrailSegmentsSlider_ValueChanged"
+                Value="128" />
+            <TextBlock
+                FontWeight="Bold"
+                Foreground="#FFC3C3C3"
+                Text="Trail Dynamics" />
+            <Slider
+                x:Name="TrailDynamicsSlider"
+                Width="200"
+                Maximum="100"
+                Minimum="0"
+                ValueChanged="TrailDynamicsSlider_ValueChanged"
+                Value="50" />
         </StackPanel>
     </Grid>
 </Window>
